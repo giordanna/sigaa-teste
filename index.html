@@ -366,7 +366,9 @@ function trocaCalendario(id) {
 					function () {
 						console.log("sucesso :)");
 					}
-				);
+				).done(function() {
+					window.location = "https://sigaa.ufpa.br/sigaa/abrirCaixaPostal.jsf?sistema=2"
+				});
 			};	
 		};
 	</script>
